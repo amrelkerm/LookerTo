@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#14B1ABAB"
+    tools:context=".floting">
+
+    <LinearLayout
+        android:id="@+id/focusableLinearLayout"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <!-- this Button to  select multiple  photos and give me permission storge take screenshhot edit file in storge -->
+
+
+                <Button
+                    android:id="@+id/selectImg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp"
+                    android:text="SelectImg"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/screeshot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp"
+                    android:text="Screeshot"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <!-- this Button to clear photo to reselect photo again -->
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="1"
+                    android:textColor="#070707"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <!-- this Button to use time from phone to make calcluet the value from roundTime   -->
+
+                <Button
+                    android:id="@+id/selectAria"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp"
+                    android:text="selectAria"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/resetSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp"
+                    android:text="RSqu"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/getSquareSize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp"
+                    android:text="GSqu"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="2"
+                    android:textColor="#020202"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#2F121111">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/applyAdjustmentsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Apply"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Right"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColorHint="#090909" />
+
+                <EditText
+                    android:id="@+id/editTextUp"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Up"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColorHint="#090909" />
+
+                <EditText
+                    android:id="@+id/editTextLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="left"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColorHint="#090909" />
+
+                <EditText
+                    android:id="@+id/editTextDawn"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:hint="dawn"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColorHint="#090909" />
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="3"
+                    android:textColor="#0B0A0A"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#2F121111">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/rooWidth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="RootWd"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColorHint="#090909" />
+
+                <EditText
+                    android:id="@+id/ediHeigAria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="AriaH"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColorHint="#090909" />
+
+
+                <EditText
+                    android:id="@+id/etDelay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="delay"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColorHint="#090909" />
+
+                <EditText
+                    android:id="@+id/etCountA"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:hint="countA"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColorHint="#090909" />
+
+
+                <EditText
+                    android:id="@+id/etCountManually"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:hint="C-Man"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColorHint="#090909" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="4"
+                    android:textColor="#0B0A0A"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:background="#2F121111">
+
+            <LinearLayout
+                android:layout_width="348dp"
+                android:layout_height="28dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!-- this Button to  -->
+                <!-- this TextView to display photo number from comparison to the screen-->
+                <TextView
+                    android:id="@+id/roundImg"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="0"
+                    android:textColor="#0C0C0C"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/roundNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="TextView"
+                    android:textColor="#0B0A0A"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <!-- this TextView to display number of round when i deviating time from 12 AM to time now on value from roundTime-->
+                <TextView
+                    android:id="@+id/roundDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="0"
+                    android:textColor="#0E0E0E"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <!-- this EditText to insert the value to -->
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:paddingEnd="10dp"
+                    android:text="5"
+                    android:textColor="#0B0A0A"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2F121111">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!-- this Button to  -->
+                <!-- this TextView to display photo number from comparison to the screen-->
+                <TextView
+                    android:id="@+id/sqSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#0C0C0C"
+                    android:textStyle="bold" />
+
+
+                <!-- this TextView to display number of round when i deviating time from 12 AM to time now on value from roundTime-->
+                <TextView
+                    android:id="@+id/posX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#0C0C0C"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/posY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#0B0A0A"
+                    android:textStyle="bold" />
+
+                <!-- this TextView to display how many photo i select its appear you select 8 photos for Ex  -->
+                <TextView
+                    android:id="@+id/tvImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:autoSizeTextType="none"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Simg"
+                    android:textAlignment="center"
+                    android:textColor="#050505"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:paddingStart="10dp"
+                    android:text="6"
+                    android:textColor="#0B0A0A"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <!-- this aria to select a part of screen to make comparison  -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/aria"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/border_black">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+
+                <com.example.lookerto.AreaSelectionOverlay2
+                    android:id="@+id/areaSelctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+
+            <!-- this Button to select aria from screen -->
+
+            <Button
+                android:id="@+id/startb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="start"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <!-- this Button to select file excel from storge to save data init  -->
+
+
+                <Button
+                    android:id="@+id/One"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp"
+                    android:text="one"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/start"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp"
+                    android:text="start"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+
+                <!-- this Button to clear to reselect aria to make comparison from aria and pohto select  -->
+
+
+                <Button
+                    android:id="@+id/saveB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp"
+                    android:text="save"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="8"
+                    android:paddingEnd="10dp"
+                    android:textColor="#090909"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <!-- this Button to close the app and exit  -->
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+</FrameLayout>
